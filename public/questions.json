@@ -1,0 +1,57 @@
+[
+  {
+    "question": "¿Cuál será el resultado de este código?",
+    "code": "const a = [1, 2, 3];\nconst b = a;\nb.push(4);\nconsole.log(a);",
+    "answers": [
+      "[1, 2, 3]",
+      "[1, 2, 3, 4]",
+      "[4, 1, 2, 3]",
+      "Error: no se puede modificar un array constante"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué imprime este código?",
+    "code": "console.log(typeof null);",
+    "answers": [
+      "'object'",
+      "'null'",
+      "'undefined'",
+      "'number'"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Cuál será el valor de `x`?",
+    "code": "let x = 10;\n(function() {\n  let x = 20;\n})();\nx += 5;",
+    "answers": [
+      "15",
+      "25",
+      "20",
+      "Error: x ya fue declarada"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "question": "¿Qué valor se imprime?",
+    "code": "console.log([...\"hello\"]);",
+    "answers": [
+      "[\"hello\"]",
+      "[\"h\", \"e\", \"l\", \"l\", \"o\"]",
+      "[\"h\", \"ello\"]",
+      "[\"he\", \"ll\", \"o\"]"
+    ],
+    "correctAnswer": 1
+  },
+  {
+    "question": "¿Qué valor se imprime en consola?",
+    "code": "const obj = {\n  name: \"Fabri\",\n  greet() {\n    return `Hola, soy ${this.name}`;\n  }\n};\nconst greet = obj.greet;\nconsole.log(greet());",
+    "answers": [
+      "Hola, soy Fabri",
+      "Hola, soy undefined",
+      "Hola, soy null",
+      "Error: this is not defined"
+    ],
+    "correctAnswer": 1
+  }
+]
